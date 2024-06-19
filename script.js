@@ -4,13 +4,13 @@ const products = [
         id: 1,
         name: "Jarrón de Cerámica",
         price: 35.00,
-        image: "jarron.jpg"
+        image: "img/jarronceramica.jpeg"
     },
     {
         id: 2,
         name: "Bolsa Tejida",
         price: 25.00,
-        image: "bolsa.jpg"
+        image: "img/bolsatejida.jpg"
     },
     {
         id: 3,
