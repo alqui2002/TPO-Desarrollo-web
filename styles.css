@@ -10,91 +10,78 @@ body {
     color: #f5f5dc;
 }
 
-.navbar .nav-link {
-    color: #f5f5dc;
+.navbar .nav-link, .navbar .navbar-brand {
+    color: #ffffff !important;
 }
 
-.navbar .nav-link:hover {
-    color: #f0e68c;
+.navbar .nav-link:hover, .navbar .navbar-brand:hover {
+    color: #f0e68c !important;
 }
 
 .container h1, .container h2 {
     color: #5a3e36;
-    font-weight: bold;
-}
-
-.container p {
-    color: #5a3e36;
-    font-size: 1.1em;
 }
 
 .product-card {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 15px;
-    margin: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
     text-align: center;
-    background-color: #fff5e1;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.product-card:hover {
-    background-color: #f0e68c;
-    cursor: pointer;
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .product-card img {
     max-width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
-.product-card h5 {
-    margin-top: 15px;
-    font-size: 18px;
+.product-card h3 {
+    color: #5a3e36;
 }
 
 .product-card p {
-    font-size: 16px;
     color: #5a3e36;
 }
 
-#search-input, #sort-select {
-    margin-bottom: 15px;
-    border: 2px solid #5a3e36;
-    border-radius: 5px;
+.product-details {
+    text-align: left;
 }
 
-#filter-button {
+.product-details h3 {
+    margin-top: 0;
+}
+
+.product-details button {
     background-color: #5a3e36;
     color: #f5f5dc;
     border: none;
+    padding: 10px 15px;
     border-radius: 5px;
-    padding: 10px 20px;
-    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
 }
 
-#filter-button:hover {
-    background-color: #f0e68c;
-    color: #5a3e36;
+.product-details button:hover {
+    background-color: #3e2a24;
 }
 
-.list-group-item {
-    background-color: #fff5e1;
-    color: #5a3e36;
-    border: 1px solid #ddd;
+#cart-count {
+    font-weight: bold;
+    color: #ffffff;
 }
 
-footer {
-    background-color:  #fff5e1;
-    
+.list-group-item button {
+    float: right;
+    background-color: #d9534f;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-
-
-
-
-
+.list-group-item button:hover {
+    background-color: #c9302c;
+}

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de Productos Artesanales</title>
+    <title>Arte y encanto</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
     <style>
@@ -22,7 +22,7 @@
 
     <!-- Barra de Navegación -->
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">Artesanales</a>
+        <a class="navbar-brand" href="#">Arte y encanto</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -38,12 +38,11 @@
                     <a class="nav-link" href="#contacto">Contacto</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="carrito.html" target="_blank">
+                    <a class="nav-link" href="#" id="cart-icon">
                         <img src="./img/shoppingcart_80945.png" alt="Carrito de compras" style="height: 20px; width: auto;">
                         (<span id="cart-count">0</span>)
                     </a>
                 </li>
-                             
             </ul>
         </div>
     </nav>
@@ -51,7 +50,7 @@
     <!-- Sección Inicio -->
     <div id="inicio" class="container mt-5 text-center">
         <h1>Bienvenidos a nuestra tienda de productos artesanales</h1>
-        <p>Bienvenidos a [Nombre del Ecommerce], un espacio dedicado a promover y celebrar la artesanía única y 
+        <p>Bienvenidos a Arte y encanto, un espacio dedicado a promover y celebrar la artesanía única y 
         auténtica de talentosos artesanos de todo el mundo. Nos enorgullecemos de ofrecer una cuidadosa selección de 
         productos artesanales que capturan la esencia del trabajo hecho a mano y la tradición cultural.</p>
     </div>
@@ -87,7 +86,7 @@
     <!-- Historia -->
     <div class="container mt-5 text-center">
         <h1>Nuestra Historia</h1>
-        <p>En [Nombre del Ecommerce], nuestra historia es un viaje apasionante de descubrimiento y aprecio por las habilidades artesanales que enriquecen nuestras vidas. Comenzamos con la visión de crear un puente entre los artesanos talentosos y los amantes de la artesanía, proporcionando un espacio donde cada pieza cuenta una historia única.
+        <p>En Arte y encanto, nuestra historia es un viaje apasionante de descubrimiento y aprecio por las habilidades artesanales que enriquecen nuestras vidas. Comenzamos con la visión de crear un puente entre los artesanos talentosos y los amantes de la artesanía, proporcionando un espacio donde cada pieza cuenta una historia única.
             Desde nuestros humildes comienzos, nos hemos dedicado a buscar y colaborar con artesanos locales y comunidades creativas, valorando la artesanía como una forma de preservar culturas y promover el comercio justo. Cada producto en nuestra plataforma no solo refleja habilidad y dedicación, sino también el corazón y el alma de quienes lo crearon.</p>
     </div>
 
@@ -120,18 +119,32 @@
         <p>Puedes contactarnos a través de nuestro correo electrónico: contacto@artesanales.com</p>
     </div>
 
-    <!-- Sección Carrito -->
-    <div id="carrito" class="container mt-5">
-        <h2>Carrito de Compras</h2>
-        <ul id="cart-items" class="list-group">
-            <!-- Productos en el carrito serán insertados aquí por JavaScript -->
-        </ul>
+    <!-- Modal del Carrito de Compras -->
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Carrito de Compras</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul id="cart-items" class="list-group">
+                        <!-- Productos en el carrito serán insertados aquí por JavaScript -->
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->
     <footer class="text-center text-lg-start mt-5">
         <div class="container p-4">
-            <p>© 2024 Tienda de Productos Artesanales. Todos los derechos reservados.</p>
+            <p>© 2024 Arte y encanto. Todos los derechos reservados.</p>
         </div>
     </footer>
 
