@@ -85,3 +85,33 @@ body {
 .list-group-item button:hover {
     background-color: #c9302c;
 }
+
+     /* Asegura que el contenedor del mapa esté centrado */
+     #mapa-canvas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* Estilo para centrar el iframe */
+    iframe {
+        padding-top: 30px;
+        max-width: 100%;
+        height: 450px;
+        border: 0;
+    }
+
+      /* Estilo para el footer */
+      .footer-icons a {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .footer-icons a:last-child {
+        margin-bottom: 0;
+    }
+
+    .footer-name {
+            display: block;
+    }

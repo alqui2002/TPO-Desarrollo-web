@@ -138,4 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Inicializar la página con los productos
     renderProducts(products);
     renderCart();
+
+
+
 });
