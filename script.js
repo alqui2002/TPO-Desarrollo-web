@@ -126,9 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
         renderProducts(sortedProducts);
     });
 
-    document.getElementById('filter-button').addEventListener('click', () => {
-        alert('La funcionalidad de filtros está en construcción.');
-    });
+  
 
     document.getElementById('cart-icon').addEventListener('click', (event) => {
         event.preventDefault(); // Evitar el comportamiento predeterminado de apertura de enlace

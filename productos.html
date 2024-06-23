@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arte y encanto</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .product-card {
+            margin-bottom: 30px;
+            padding: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product-card:hover {
+            cursor: pointer;
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .product-card {
+            flex: 1 1 calc(33% - 30px); /* 3 cards per row with space between them */
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="./img/logo.jpeg" alt="Logo Arte y Encanto" style="height: 40px; width: auto;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#productos">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="cart-icon">
+                        <img src="./img/shoppingcart_80945.png" alt="Carrito de compras" style="height: 20px; width: auto;">
+                        (<span id="cart-count">0</span>)
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección Productos -->
+    <div id="productos" class="container mt-5">
+        <h2 class="text-center">Catálogo de Productos</h2>
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <input type="text" id="search-input" class="form-control" placeholder="Buscar productos...">
+            </div>
+            <div class="col-md-4">
+                <select id="sort-select" class="form-control">
+                    <option value="default">Ordenar por</option>
+                    <option value="asc">Menor precio</option>
+                    <option value="desc">Mayor precio</option>
+                </select>
+            </div>
+            
+        </div>
+        <div class="row product-list" id="product-list">
+            <!-- Productos serán insertados aquí por JavaScript -->
+            <div class="card product-card">
+                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Producto 1">
+                <div class="card-body">
+                    <h5 class="card-title">Producto 1</h5>
+                    <p class="card-text">$10.00</p>
+                </div>
+            </div>
+            <div class="card product-card">
+                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Producto 2">
+                <div class="card-body">
+                    <h5 class="card-title">Producto 2</h5>
+                    <p class="card-text">$15.00</p>
+                </div>
+            </div>
+            <div class="card product-card">
+                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Producto 3">
+                <div class="card-body">
+                    <h5 class="card-title">Producto 3</h5>
+                    <p class="card-text">$20.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal del Carrito de Compras -->
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Carrito de Compras</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul id="cart-items" class="list-group">
+                        <!-- Productos en el carrito serán insertados aquí por JavaScript -->
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start mt-5">
+        <div class="container-fluid p-4">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-md-left text-center">
+                    <span class="footer-name">Rodrigo Alcaraz</span>
+                    <span class="footer-name">Alicia Chirazi</span>
+                    <span class="footer-name">Román Naviliat</span>
+                    <span class="footer-name">Esteban Soncin</span>
+                </div>
+                <div class="col-md-4 text-center my-2 my-md-0">
+                    <span>© 2024 Arte y Encanto. Todos los derechos reservados.</span>
+                </div>
+                <div class="col-md-4 text-md-right text-center">
+                    <div class="footer-icons">
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="./img/instagram.png" alt="Instagram" style="height: 30px; width: auto; margin: 0 10px;">
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img src="./img/facebook.png" alt="Facebook" style="height: 30px; width: auto; margin: 0 10px;">
+                        </a>
+                        <a href="https://www.twitter.com/" target="_blank">
+                            <img src="./img/x-icon.png" alt="Twitter" style="height: 30px; width: auto; margin: 0 10px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

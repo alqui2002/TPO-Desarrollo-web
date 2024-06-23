@@ -115,3 +115,33 @@ body {
     .footer-name {
             display: block;
     }
+
+    footer{
+    color: white;
+    background-color: #5a3e36;
+    }
+
+    h1,h2{
+        font-family: "Playwrite IT Moderna", cursive;
+    }
+
+    p{
+        font-family: "Montserrat", sans-serif;
+    }
+
+    .historia{
+        background-color: brown;
+        color: white;
+    }
+
+    .historia h1{
+         color: black;
+    }
+
+    .carousel-inner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
